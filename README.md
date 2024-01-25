@@ -1,6 +1,6 @@
 # Graphical_Models_2021
 
-This is the network architecture for our paper "single image tree reconstruction via adversarial network. 2021".
+This is the network architecture for our paper published in Graphical Models (CCF-B).
 
 ### Requirements:
 tensorflow-gpu

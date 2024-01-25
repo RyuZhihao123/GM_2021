@@ -22,7 +22,7 @@ parser.add_argument('--lr', dest='lr', type=float, default=0.0002, help='initial
 parser.add_argument('--beta1', dest='beta1', type=float, default=0.5, help='momentum term of adam')
 parser.add_argument('--flip', dest='flip', type=bool, default=True, help='if flip the images for data argumentation')
 parser.add_argument('--which_direction', dest='which_direction', default='AtoB', help='AtoB or BtoA')
-parser.add_argument('--phase', dest='phase', default='train', help='train, test')
+parser.add_argument('--mode', dest='mode', default='train', help='train, test')
 parser.add_argument('--save_epoch_freq', dest='save_epoch_freq', type=int, default=50, help='save a model every save_epoch_freq epochs (does not overwrite previously saved models)')
 parser.add_argument('--save_latest_freq', dest='save_latest_freq', type=int, default=5000, help='save the latest model every latest_freq sgd iterations (overwrites the previous latest model)')
 parser.add_argument('--print_freq', dest='print_freq', type=int, default=50, help='print the debug information every print_freq iterations')
@@ -49,7 +49,7 @@ def main(_):
                         output_size=args.fine_size, dataset_name=args.dataset_name,
                         checkpoint_dir=args.checkpoint_dir, sample_dir=args.sample_dir)
 
-        if args.phase == 'train':
+        if args.mode == 'train':
             model.train(args)
         else:
             model.test(args)

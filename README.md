@@ -15,15 +15,7 @@ TensorFlow 0.11+
 
 python 3.6+
 
-### Usage:
-$\bullet$ train the model:
-```
-python main.py --mode train
-```
-$\bullet$ test the model
-```
-python main.py --mode test
-```
+
 
 
 

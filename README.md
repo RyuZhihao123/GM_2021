@@ -1,6 +1,6 @@
 # Graphical_Models_2021
 
-This is the network architecture for our paper published in Graphical Models (CCF-B).
+This is the network architecture for our paper published in journal Graphical Models.
 
 ### Requirements:
 tensorflow-gpu
